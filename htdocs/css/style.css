@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+/*
+Yellow: #E8BA04;
+Teal: #397f7d;
+*/
+html {
+    background-color: #E9E0D9;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    font-size: 1em;
+    line-height: 1.57em;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    color: #444;
+}
+
+h1,
+h2 {
+    color: #397f7d;
+    font-family: "Droid Serif", serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+article {
+    background-color: #fefefe;
+    margin: 1.2em auto;
+    padding: 1.67em;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img.left {
+    margin-top: 1em;
+    margin-bottom: .6em;
+}
+
+.byline {
+    border: 2px dotted #397f7d;
+    padding: .67em;
+    margin: 2em 0;
+}
+
+.byline img {
+    border-radius: 50%;
+    float: left;
+    width: 80px;
+    margin-right: 1em;
+}
+
+a:link {
+    color: #F2693E;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6D4F53;
+}
+
+a:hover {
+    color: #916A70;
+}
+
+a:active {
+    color: #916A70;
+}
+
+.clearfix {
+    overflow: auto;
+}

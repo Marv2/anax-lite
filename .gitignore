@@ -2,3 +2,5 @@
 /build
 /cache
 /vendor
+/htdocs/img
+/htdocs/cimage
