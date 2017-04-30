@@ -20,6 +20,34 @@ body {
     color: #444;
 }
 
+.navbar {
+    padding: 1.8em 1em .4em 1em;
+    font-weight: 700;
+    float: right;
+    margin-bottom: 2em;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar a:link {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar a:hover {
+    color: #FFF;
+    background-color: #0C8484;
+}
+
+.navbar .selected {
+    color: #FFF;
+    background-color: #0C8484; /*#C5F7D9 #E8BA39;*/
+}
+
 h1,
 h2 {
     color: #397f7d;
@@ -28,6 +56,7 @@ h2 {
 
 h1 {
     font-size: 40px;
+    line-height: 1em
 }
 
 h2 {
@@ -82,4 +111,17 @@ a:active {
 
 .clearfix {
     overflow: auto;
+}
+
+@media (max-width: 920px) {
+
+    article {
+        margin-top: 0;
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    .navbar a {
+        margin-bottom: 0.2em;
+    }
 }
