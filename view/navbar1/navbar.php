@@ -34,5 +34,7 @@ foreach ($navbar["items"] as $items => $item) {
 ?>
 
 <nav class="<?= $navClass ?>">
-    <?= $navHtml ?>
+    <ul>
+        <?= $navHtml ?>
+    </ul>
 </nav>

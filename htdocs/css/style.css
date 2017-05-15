@@ -20,6 +20,23 @@ body {
     color: #444;
 }
 
+a:link {
+    color: #F2693E;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #bf5b09;
+}
+
+a:hover {
+    color: #916A70;
+}
+
+a:active {
+    color: #916A70;
+}
+
 .navbar {
     padding: 1.8em 1em .4em 1em;
     font-weight: 700;
@@ -30,12 +47,24 @@ body {
 .navbar li {
     display: inline-block;
     list-style-type: none;
+    padding: 0;
+    margin-right: .4em;
 }
 
 .navbar a:link {
+    display: inline-block;
+    list-style-type: none;
     padding: 0.5em 1em;
+}
+
+.navbar a:link {
+    color: #916A70;
     text-decoration: none;
     background-color: transparent;
+}
+
+.navbar a:visited {
+    color: #916A70;
 }
 
 .navbar a:hover {
@@ -43,10 +72,56 @@ body {
     background-color: #0C8484;
 }
 
-.navbar .selected {
+.selected a:link {
     color: #FFF;
     background-color: #0C8484; /*#C5F7D9 #E8BA39;*/
 }
+
+.selected a:visited {
+    color: #FFF;
+}
+
+
+/* Game */
+.game {
+    padding: 1.6em 0;
+    font-weight: 700;
+    margin-bottom: 1.6em;
+}
+
+.game li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin-right: .4em;
+}
+
+.game a:link {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.5em 1em;
+    color: #FFF;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.game a:visited {
+    color: #FFF;
+}
+
+.color1 {
+    background-color: #d67908;
+}
+
+.color2 {
+    background-color: #5ea573;
+}
+
+.color3 {
+    background-color: #3d84a5;
+}
+
+
 
 h1,
 h2 {
@@ -90,23 +165,6 @@ img.left {
     float: left;
     width: 80px;
     margin-right: 1em;
-}
-
-a:link {
-    color: #F2693E;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #6D4F53;
-}
-
-a:hover {
-    color: #916A70;
-}
-
-a:active {
-    color: #916A70;
 }
 
 .clearfix {

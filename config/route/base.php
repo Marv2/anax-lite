@@ -3,8 +3,8 @@
  * Routes.
  */
  $app->router->add("", function () use ($app) {
-     $app->view->add("take1/header", ["title" => "Home"]);
-     $app->view->add("navbar1/navbar");
+     $app->view->add("take1/header", ["title" => "Startsida"]);
+     $app->view->add("navbar2/navbar");
      $app->view->add("take1/home");
      $app->view->add("take1/footer");
 
