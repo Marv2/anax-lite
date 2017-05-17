@@ -1,15 +1,15 @@
 <?php
 
-namespace Marv\Dice;
+namespace Marv\Dice100;
 
-class Round implements iGame
+class Round implements GameInterface
 {
     /**
     * @var object $dice
     * @var integer $score the most recent dice roll
     * @var integer $roundSum The points in the current round
     */
-    protected $dice;
+    private $dice;
     protected $score;
     protected $roundSum;
 
@@ -37,8 +37,11 @@ class Round implements iGame
             $this->roundSum += $this->score;
         }
 
+        //echo $this->score;
+
         return $this->score;
     }
+
 
 
     public function getTotal()

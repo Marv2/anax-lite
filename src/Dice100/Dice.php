@@ -1,6 +1,6 @@
 <?php
 
-namespace Marv\Dice;
+namespace Marv\Dice100;
 
 class Dice
 {

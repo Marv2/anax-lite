@@ -83,6 +83,12 @@ a:active {
 
 
 /* Game */
+.game-result {
+    padding: 1em 1em 2em 1em;
+    border: 1px dotted #d67908;
+    font-size: 1.3em;
+}
+
 .game {
     padding: 1.6em 0;
     font-weight: 700;
@@ -144,6 +150,11 @@ article {
     padding: 1.67em;
 }
 
+ul {
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+}
+
 img {
     margin: 0;
     padding: 0;
@@ -177,6 +188,11 @@ img.left {
         margin-top: 0;
         width: auto;
         overflow-x: hidden;
+    }
+
+    .navbar {
+        float: none;
+        width: auto;
     }
 
     .navbar a {

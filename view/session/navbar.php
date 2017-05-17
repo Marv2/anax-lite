@@ -4,6 +4,6 @@
     $app->navbar->configure("navbar-session.php");
 ?>
 
-<nav class="navbar">
+<navbar class="navbar">
     <?= $app->navbar->getMHTML(); ?>
-</nav>
+</navbar>

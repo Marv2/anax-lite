@@ -13,10 +13,14 @@
 
     <section>
         <h2>Kmom02</h2>
-        <p><strong></strong><br></p>
-        <p><strong></strong><br></p>
-        <p><strong></strong><br></p>
-        <p><strong></strong><br></p>
+        <p><strong>Hur känns det att skriva kod utanför och inuti ramverket, ser du fördelar och nackdelar med de olika sätten?</strong>Eftersom Anax tillåter att man använder moduler som inte har någon koppling till ramveket känns det som ett ganska fritt om än lite ovant att organisera koden på. Att det går bra med php-kod i vyerna är nog både bra och dåligt. Generellt verkar fördelen med ramverk vara att man är snabbt på banan och nackdelen att de kan vara hårt styrda och kräver lite inlärning, som allt annat...</p>
+        <p><strong>Hur väljer du att organisera dina vyer?</strong><br>Jag har behållit dem i routern och avvaktar lite med att organisera dem som layout.</p>
+        <p><strong>Berätta om hur du löste integreringen av klassen Session.</strong><br>Session är integrerat som en del av $app men inte från frontcontrollern. Den instansieras är gjord i vyerna och jag har valt att behålla det så som exempel för mig själv, men kan flyttas till routen för att hålla vyerna rena, vyerna increment och decrement behövs egentligen inte alls eftersom de inte renderar någon sida utan gör redirect. </p>
+        <p><strong>Berätta om hur du löste uppgiften med Tärningsspelet 100?</strong><br>Det hade fungerat att använda sessionsklassen som redan finns men eftersom den inte skulle ha några externa beroenden av andra klasser lade jag till en egen sessionklass i ”Modulen”. Sessionsobjektet instansieras i routern i $app och jag lade ett Gameobjekt i sessionen. Hela sessionsobjektet injectas i gameobjektets metod play, som sedan styr spelet. Spelets view är enkel att använda och gör enbart echo på de metoder i gameobjektet som skriver ut länkarna som styr spelet och resultatet av det.</p>
+        <p>Det hade fungerat att använda sessionsklassen som redan finns men eftersom den inte skulle ha några externa beroenden av andra klasser lade jag till en egen sessionklass i ”Modulen”. Sessionsobjektet instansieras i routern i $app och jag lade ett Gameobjekt i sessionen. Hela sessionsobjektet injectas i gameobjektets metod play, som sedan styr spelet. Spelets view är enkel att använda och gör enbart echo på de metoder i gameobjektet som skriver ut länkarna som styr spelet och resultatet av det.</p>
+        <p>Game och round har ett gemensamt interface som implementerar metoderna play och 	getTotal. Game har en arvsrelation till till sessionsobjektet som jag är osäker på om den 	behövs eftersom sessionsobjektet injectas i Game. Jag började med mer ganska mycket kod i 	routern eftersom det är tydligare vad den gör och har sedan försökt flytta den till klasserna. 	Min upplevelse är att jag har trasslat till objekten i onödigt många lager och att funktionalitet 	skulle kunna flyttas nedåt i klasshirearkin.</p>
+        <p>Uppgiftens instruktioner var för mig alltför vaga och delvis motstridiga vad gäller  	prefektion kontra efter bästa förmåga. Jag förstod inte hur det var tänkt att koden skulle 	organiseras och skrev om den flera gånger utan att bli nöjd. Att pröva sig fram är på många 	sätt en 	bra metod, men för att bli meningsfull krävs det någon form av återkoppling. Jag skulle föredra återkoppling i form av genomgång av olika lösningar.</p>
+        <p><strong>Några tankar kring SQL så här långt?</strong><br>SQL känns helt okej men ibland är det lite knepigt klura ut i vilken ordning saker ska göras i de mer komplxa frågorna.</p>
     </section>
 
     <section>

@@ -1,8 +1,8 @@
 <?php
 
-namespace Marv\Dice;
+namespace Marv\Dice100;
 
-interface iGame
+interface GameInterface
 {
     public function play($something);
     public function getTotal();
